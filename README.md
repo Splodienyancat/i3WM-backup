@@ -1,4 +1,6 @@
-	Overview/misc
+![image](https://user-images.githubusercontent.com/103719154/187832683-cf263515-eb1e-4772-abdd-68d0a3637b6f.png)
+
+Overview/misc
 
 My backups for my WM configs
 
@@ -25,6 +27,3 @@ This just copies all the configs into your .config folder
 Dont run the install script if your on arch it most likely wont work due to different pathing
 This probably works on arch too with some fiddling around but for picom the experimental-backends did the trick when i did transparency on arch.
 There may be other issues but this is what i could remember.
-
-
-![image](https://user-images.githubusercontent.com/103719154/187832683-cf263515-eb1e-4772-abdd-68d0a3637b6f.png)
