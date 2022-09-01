@@ -1,4 +1,4 @@
-cd ~/i3WM-backup 
+cd $HOME/i3WM-backup 
 
 cp -r alacritty $HOME/.config/alacritty 
 cp -r i3 $HOME/.config/i3
