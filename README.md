@@ -12,7 +12,7 @@ The i3 config has an xrandr in it for my main setup so you are going to need to 
 
 Must have these packages installed
 
-i3 Alacritty Fireshot Picom Polybar xrandr
+i3 Alacritty Fireshot Picom Polybar xrandr Nitrogen
 
 	Ubuntu install
 
