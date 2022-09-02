@@ -1,10 +1,12 @@
 ![image](https://user-images.githubusercontent.com/103719154/187832683-cf263515-eb1e-4772-abdd-68d0a3637b6f.png)
 
-Overview/misc
+	Overview/misc
 
 My backups for my WM configs
 
 Made public because why not
+
+Every change i make gets saved here so have fun updating or whavever if you actually like this
 
 The i3 config has an xrandr in it for my main setup so you are going to need to change it to the proper settings
 
