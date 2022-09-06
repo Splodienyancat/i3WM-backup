@@ -1,11 +1,13 @@
-cp -r alacritty $HOME/.config/alacritty 
-cp -r i3 $HOME/.config/i3
-cp -r picom $HOME/.config/picom
-cp -r polybar $HOME/.config/polybar
-cp -r Backgrounds $HOME/Pictures/Backgrounds
+sudo cp -r alacritty $HOME/.config/alacritty 
+sudo cp -r i3 $HOME/.config/i3
+sudo cp -r picom $HOME/.config/picom
+sudo cp -r polybar $HOME/.config/polybar
+sudo cp -r Backgrounds $HOME/Pictures/Backgrounds
 
-if grep -q "#force_color_prompt=yes";then
-	sudo sed -i 's/#force_color_prompt=yes/"force_color_prompt=yes"/' .bashrc
+if grep -w "#force_color_prompt=yes" "$HOME/.bashrc";then
+	sudo sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/' ~/.bashrc
+else
+	echo "force_color_prompt=yes is already uncommented"
 fi
 
 echo "The script did run try doing super+r or logging into i3"
