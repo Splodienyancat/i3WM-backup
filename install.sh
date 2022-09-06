@@ -6,5 +6,6 @@ cp -r Backgrounds $HOME/Pictures/Backgrounds
 
 if grep -q "#force_color_prompt=yes";then
 	sudo sed -i 's/#force_color_prompt=yes/"force_color_prompt=yes"/' .bashrc
+fi
 
 echo "The script did run try doing super+r or logging into i3"

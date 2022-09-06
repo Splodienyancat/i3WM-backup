@@ -18,7 +18,7 @@
 
 [colors]
 background = #373b3e
-background-alt = #6a6d75
+background-alt = #bec8d1
 foreground = #C5C8C6
 primary = #86cecb
 secondary = #137a7f
@@ -39,21 +39,20 @@ line-size = 1pt
 border-size = 0pt
 border-color = #00000000
 
-padding-left = 1
+padding-left = 0
 padding-right = 3
 
 module-margin = 1
 
 separator = |
-separator-foreground = ${colors.primary}
+separator-foreground = ${colors.disabled}
 
 font-0 = monospace:pixelsize=10;3
 font-1 = Noto Sans CJK JP
 font-2 = DSEG7Modern:pixelsize=10;2
-font-3 = Noto Sans Symbols2:pixelsize=13;5 
-
 
 modules-left = i3 xwindow
+modules-right = memory cpu eth date
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -70,14 +69,11 @@ enable-ipc = true
 
 [bar/Bar1]
 inherit = bar/MASTER
-monitor = HDMI-0
-modules-right = memory cpu eth date suspend
-padding-right = 1
+monitor = HDMI-1
 
-[bar/Bar2]
+[bar/Bar2] 
 inherit = bar/MASTER
-monitor = HDMI-1-2
-modules-right = memory cpu eth date
+monitor = HDMI-1-3
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -161,15 +157,12 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %{F#6a6d75}%ifname%%{F-} %essid% %local_ip%
+label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
 
 [module/eth]
 inherit = network-base
 interface-type = wired
-
-label-connected = %ifname% %{F} %local_ip%
-
-label-connected-foreground = ${colors.primary}
+label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 
 [module/date]
 type = internal/date
@@ -199,10 +192,10 @@ label-mode-background = #e60053
 ;   %output%
 ; Default: %icon% %name%
 label-focused = %index%
-label-focused-foreground = ${colors.primary}
-label-focused-background = ${colors.background-alt}
-label-focused-underline = ${colors.alert}
-label-focused-padding = 2
+label-focused-foreground = #ffffff
+label-focused-background = #3f3f3f
+label-focused-underline = #fba922
+label-focused-padding = 1
 
 ; Available tokens:
 ;   %name%
@@ -211,8 +204,7 @@ label-focused-padding = 2
 ;   %output%
 ; Default: %icon% %name%
 label-unfocused = %index%
-label-unfocused-foreground = ${colors.secondary}
-label-unfocused-padding = 0
+label-unfocused-padding = 1
 
 ; Available tokens:
 ;   %name%
@@ -221,8 +213,8 @@ label-unfocused-padding = 0
 ;   %output%
 ; Default: %icon% %name%
 label-visible = %index%
-label-visible-underline = ${colors.secondary}
-label-visible-padding = 2
+label-visible-underline = #555555
+label-visible-padding = 1
 
 ; Available tokens:
 ;   %name%
@@ -231,36 +223,14 @@ label-visible-padding = 2
 ;   %output%
 ; Default: %icon% %name%
 label-urgent = %index%
-label-urgent-foreground = ${colors.alert}
-label-urgent-background = ${colors.background-alt}
-label-urgent-padding = 0
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 1
 
 ; Separator in between workspaces
 label-separator = :
 label-separator-padding = 0
-label-separator-foreground = ${colors.secondary}
-
-[module/suspend]
-type = custom/menu
-
-expand-right = true
-
-label-open-foreground = ${colors.alert}
-
-label-open = ⏻
-
-label-close-foreground = ${colors.alert}
-
-label-close = _N_
-
-label-separator = /
-
-label-close-background = ${colors.secondary}
-
-format-spacing = 1
-
-menu-0-0 = %{B#137a7f}%{F#e12885}_Y_
-menu-0-0-exec = systemctl suspend
+label-separator-foreground = #ffb52a
 
 [settings]
 screenchange-reload = true
