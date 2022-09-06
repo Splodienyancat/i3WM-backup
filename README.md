@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/103719154/187832683-cf263515-eb1e-4772-abdd-68d0a3637b6f.png)
+![image](https://user-images.githubusercontent.com/103719154/188546092-070d35c3-ad91-4e9b-89ba-fb425475abf0.png)
 
 	Overview/misc
 
@@ -14,7 +14,7 @@ The i3 config has an xrandr in it for my main setup so you are going to need to 
 
 Must have these packages installed
 
-i3 Alacritty Fireshot Picom Polybar xrandr Nitrogen
+i3 Alacritty Fireshot Picom Polybar xrandr Nitrogen fonts-noto(specifically noto symbols 2)
 
 	Ubuntu install
 
