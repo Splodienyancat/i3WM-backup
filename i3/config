@@ -200,7 +200,7 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 
 
-exec_always xrandr --output HDMI-0 --mode 2560x1080 --refresh 75.00 --primary --right-of HDMI-1-2 --output HDMI-1-2 --mode 1920x1080 --refresh 60.00
+exec_always xrandr --output HDMI-0 --mode 2560x1080 --refresh 100 --primary --right-of HDMI-1-2 --output HDMI-1-2 --mode 1920x1080 --refresh 60.00
 
 exec_always picom
 
