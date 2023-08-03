@@ -24,6 +24,7 @@ I dont know if any of this works from the ubuntu repo since i built most of this
 
 Then all you need to do is to run ./intall.sh
 This just copies all the configs into your .config folder
+This should have been added in way earlier but the install script is not well tested or developed so dont do this on a system that isnt fresh
 
 	A note for Arch users
 Dont run the install script if your on arch it most likely wont work due to different pathing
